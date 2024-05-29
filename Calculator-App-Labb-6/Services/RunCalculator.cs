@@ -27,6 +27,7 @@ namespace Calculator_App_Labb_6.Services
             {
                 Console.WriteLine("Choose an operation: +, -, *, / or type 'history' to see past calculations or 'exit' to quit:");
                 string operation = Console.ReadLine();
+                Console.Clear();
 
                 if (operation == "exit")
                 {
@@ -38,16 +39,17 @@ namespace Calculator_App_Labb_6.Services
                     foreach (var calc in _history.GetHistory())
                     {
                         Console.WriteLine(calc);
+                        Console.ReadKey();
                     }
                     continue;
                 }
 
                 Console.WriteLine("Enter the first number: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
-
+                Console.Clear();
                 Console.WriteLine("Enter the second number: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
-
+                Console.Clear();
                 double result = 0;
                 string calculation = "";
 

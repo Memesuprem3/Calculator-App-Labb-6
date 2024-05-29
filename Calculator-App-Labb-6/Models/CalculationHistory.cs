@@ -17,7 +17,10 @@ namespace Calculator_App_Labb_6.Models
 
         public IEnumerable<string> GetHistory()
         {
+            Console.WriteLine("Calculation History:");
             return _history;
+            
         }
+       
     }
 }
