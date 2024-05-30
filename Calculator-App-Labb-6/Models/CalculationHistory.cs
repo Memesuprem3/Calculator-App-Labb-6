@@ -8,7 +8,13 @@ namespace Calculator_App_Labb_6.Models
 {
     public class CalculationHistory
     {
-        private List<string> _history = new List<string>();
+        private List<string> _history = new List<string>
+        {
+             "5 + 3 = 8",
+            "10 - 4 = 6",
+            "2 * 3 = 6"
+
+        };
 
         public void AddCalculation(string calculation)
         {
@@ -19,8 +25,7 @@ namespace Calculator_App_Labb_6.Models
         {
             Console.WriteLine("Calculation History:");
             return _history;
-            
+
         }
-       
     }
 }
